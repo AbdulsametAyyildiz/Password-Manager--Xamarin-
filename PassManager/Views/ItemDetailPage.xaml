@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PassManager.Views.ItemDetailPage"
+    Title="{Binding Title}">
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem 
+            x:Name="ChangeBtn" 
+            Text="Düzenle" 
+            Clicked="ToolbarItem_Clicked_1"/>
+        
+        <ToolbarItem 
+            Text="Sil" 
+            Clicked="ToolbarItem_Clicked"/>
+        
+    </ContentPage.ToolbarItems>
+    
+    
+    
+    <StackLayout>
+
+        <ScrollView>
+
+            <StackLayout 
+            Spacing="10" 
+            Padding="10">
+
+             
+
+                <Frame
+            Padding="12">
+
+                    <StackLayout>
+                        <Label Text="Kategori:" FontSize="Small" />
+                        <Label x:Name="Cat" Text="{Binding Text}" TextColor="#cc000000" FontSize="18" Margin="0,0,0,0"/>
+                        <Editor x:Name="CatEditor" AutoSize="TextChanges" Text="{Binding Text}" IsVisible="false" TextChanged="CatEditor_TextChanged"/>
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+            Padding="12">
+
+                    <StackLayout>
+                        <Label Text="Platform/Kuruluş Adı:" FontSize="Small" />
+                        <Label x:Name="InfoN" Text="{Binding Description}" TextColor="#cc000000" FontSize="18" Margin="0,0,0,0"/>
+                        <Editor x:Name="InfoNEditor" AutoSize="TextChanges" Text="{Binding Description}" IsVisible="false" TextChanged="InfoNEditor_TextChanged" />
+                    </StackLayout>
+
+                </Frame>
+
+
+                <Frame
+            Padding="12">
+
+                    <StackLayout Orientation="Vertical">
+
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Kullanıcı Adı/No:" FontSize="Small" />
+                            <Label x:Name="InfoLabel" Text="{Binding InfoNumber}" TextColor="#cc000000" FontSize="18" Margin="0,0,0,0"/>
+                            <Editor x:Name="InfoNumEditor" AutoSize="TextChanges" Text="{Binding InfoNumber}" IsVisible="false" TextChanged="InfoNumEditor_TextChanged"/>
+                        </StackLayout>
+
+                        <Button
+                        x:Name="InfoCopy"
+                        Clicked="Button_Clicked"
+                        HeightRequest="30" 
+                        WidthRequest="60" 
+                        HorizontalOptions="End"
+                        Text="Kopyala"
+                        FontSize="8"/>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+            Padding="12">
+
+                    <StackLayout Orientation="Vertical">
+
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Şifre:" FontSize="Small" />
+                            <Label x:Name="PassLabel" Text="{Binding Password}" TextColor="#cc000000" FontSize="18" Margin="0,0,0,0"/>
+                            <Editor x:Name="PassEditor" AutoSize="TextChanges" Text="{Binding Password}" IsVisible="false" TextChanged="PassEditor_TextChanged"/>
+                        </StackLayout>
+
+                        <Button
+                        x:Name="PassCopy"
+                        Clicked="Button_Clicked_1"
+                        HeightRequest="30" 
+                        WidthRequest="60" 
+                        HorizontalOptions="End"
+                        Text="Kopyala"
+                        FontSize="8"/>
+
+                    </StackLayout>
+
+                </Frame>
+
+                <Frame
+                x:Name="LinkFrame"
+                Padding="12"
+                >
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Adres:" FontSize="Small" />
+                        <Label Text="{Binding InfoAdress}"  x:Name="linkAdress" TextColor="Blue" Margin="0,0,0,0">
+                            <Label.GestureRecognizers>
+
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Editor x:Name="AdressEditor" Text="{Binding InfoAdress}" AutoSize="TextChanges" IsVisible="false" TextChanged="AdressEditor_TextChanged" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+        </ScrollView>
+
+        <StackLayout
+            x:Name="BtnLayout"
+            HeightRequest="34" 
+            HorizontalOptions="Center"
+            Margin="0,2,0,10"
+            Orientation="Horizontal"
+            IsVisible="false">
+
+            <Button
+                    x:Name="CancelBtn"
+                    Clicked="CancelBtn_Clicked"
+                    Text="İptal" 
+                    FontSize="12" 
+                    WidthRequest="90" 
+                    Margin="0,0,40,0"
+                    />
+
+            <Button
+                    x:Name="SaveBtn"
+                    Clicked="SaveBtn_Clicked"
+                    Text="Kaydet" 
+                    FontSize="12" 
+                    WidthRequest="90" 
+                    Margin="40,0,0,0"
+                    IsEnabled="False"
+                    />
+
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

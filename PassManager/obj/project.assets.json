@@ -841,11 +841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programlar\\Visual Studio\\Projects\\PassManager\\PassManager\\PassManager.csproj",
+      "projectUniqueName": "D:\\Programlar\\GitHub\\Password-Manager--Xamarin-\\PassManager\\PassManager.csproj",
       "projectName": "PassManager",
-      "projectPath": "D:\\Programlar\\Visual Studio\\Projects\\PassManager\\PassManager\\PassManager.csproj",
+      "projectPath": "D:\\Programlar\\GitHub\\Password-Manager--Xamarin-\\PassManager\\PassManager.csproj",
       "packagesPath": "C:\\Users\\abdus\\.nuget\\packages\\",
-      "outputPath": "D:\\Programlar\\Visual Studio\\Projects\\PassManager\\PassManager\\obj\\",
+      "outputPath": "D:\\Programlar\\GitHub\\Password-Manager--Xamarin-\\PassManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programlar\\Visual Studio\\Devices & SDK\\NuGetPackages",

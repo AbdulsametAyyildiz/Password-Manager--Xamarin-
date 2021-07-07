@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zpBUVHMWTSz0F9+Pc5IeU4GgIYV1w2cpe9w/liuIly97WK6Vp/Wiz0ymtaj2wMxLim7CjfEIVuyd088YmoQB1Q==",
+  "dgSpecHash": "WeAr7aBj09ok4d4kFcVZLZOoopZt4Hfm2LVf5TB8iC2DJ00MI9bF+rvewQ7FW0ARlAQeW8eKZ5YyADz6wo2coA==",
   "success": true,
-  "projectFilePath": "D:\\Programlar\\Visual Studio\\Projects\\PassManager\\PassManager\\PassManager.csproj",
+  "projectFilePath": "D:\\Programlar\\GitHub\\Password-Manager--Xamarin-\\PassManager\\PassManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abdus\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\abdus\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
